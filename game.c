@@ -2,7 +2,7 @@
 
 int main()
 {
-      int number, g = 90,;
+      int number, g = 90;
 
       for (int i = 1; 1; i++)
       {
@@ -15,7 +15,6 @@ int main()
 
             else if (number != g)
             {
-                  try++;
                   printf("enter num:");
                   scanf("%d", &number);
 
