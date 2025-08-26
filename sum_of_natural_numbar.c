@@ -6,7 +6,7 @@ int main()
     int num, store = 0;
     printf("enetr num:");
     scanf("%d", &num);
-    for (int i = 1; i < num; i++)
+    for (int i = 1; i <=num; i++)
     {
         store += i;
         /* code */
