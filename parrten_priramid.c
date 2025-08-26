@@ -14,7 +14,7 @@ int main()
         }
         for (int l = 0; l < i; l++)
         {
-            printf("* ");
+            printf("*");
             /* code */
         }
         printf("\n");
