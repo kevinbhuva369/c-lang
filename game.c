@@ -2,14 +2,14 @@
 
 int main()
 {
-      int number, g = 90, try = 0;
+      int number, g = 90,;
 
-      for (int i = 0; 1; i)
+      for (int i = 1; 1; i++)
       {
 
             if (number == g)
             {
-                  printf("you win and gass numis:%d tryis:%d", g, try);
+                  printf("you win and gass numis:%d tryis:%d", g, i);
                   break;
             }
 
