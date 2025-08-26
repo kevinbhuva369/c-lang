@@ -4,13 +4,13 @@ int main()
 {
       int number, g = 90, try = 0;
 
-      for (int i = 1; i <= 15; i++)
+      for (int i = 0; 1; i)
       {
 
             if (number == g)
             {
-                  i = 10;
                   printf("you win and gass numis:%d tryis:%d", g, try);
+                  break;
             }
 
             else if (number != g)
@@ -19,17 +19,12 @@ int main()
                   printf("enter num:");
                   scanf("%d", &number);
 
-                  if (try == 10)
-                  {
-                        printf("you loss");
-                  }
-
-                  else if (number <= g)
+                  if (number < g)
                   {
                         printf("enetr high numbar");
                         /* code */
                   }
-                  else if (number >= g)
+                  else if (number > g)
                   {
                         printf("enetr min num");
                   }
