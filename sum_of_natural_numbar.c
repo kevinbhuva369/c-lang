@@ -12,4 +12,5 @@ int main()
         /* code */
     }
     printf("the sum is:%d", store);
+    return 0;
 }

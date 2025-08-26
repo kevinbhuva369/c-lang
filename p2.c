@@ -12,4 +12,5 @@ loop:
       goto loop;
       /* code */
    }
+   return 0;
 }

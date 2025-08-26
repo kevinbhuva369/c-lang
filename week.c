@@ -35,4 +35,5 @@ int main()
       printf("invelid num entar 1 to 7 day ");
         break;
     }
+    return 0;
 }
