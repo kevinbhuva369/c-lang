@@ -10,7 +10,7 @@ on:
 
 jobs:
   analyze:
-    name: Analyze C/C++
+    name: Analyze C
     runs-on: ubuntu-latest
     permissions:
       security-events: write
@@ -23,7 +23,7 @@ jobs:
       matrix:
         include:
         - language: c-cpp
-          build-mode: autobuild
+          build-mode: manual   # ✅ manual build for C
 
     steps:
     - name: Checkout repository
@@ -34,16 +34,14 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        # queries: +security-extended,security-and-quality
 
-    # अगर autobuild fail हो तो यहां manual build command डालनी होगी
-    - if: matrix.build-mode == 'manual'
-      shell: bash
+    # ✅ Manual build step
+    - name: Build C project
       run: |
-        echo "⚠️ Manual build के लिए अपने commands डालें"
-        echo "Example:"
-        echo "  make"
-        exit 1
+        echo "🔨 Compiling all C files..."
+        mkdir -p build
+        # सभी .c files को compile करके एक executable बनाएगा
+        gcc -Wall -Wextra -O2 -o build/app $(find . -name "*.c")
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
