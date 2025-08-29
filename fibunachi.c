@@ -10,6 +10,6 @@ int main()
         store = b + a;
         b = a;
         a = store;
-        printf("the numbar is:%d", store);
     }
+    printf("the numbar is:%d", store);
 }
