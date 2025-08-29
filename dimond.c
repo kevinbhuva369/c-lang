@@ -19,7 +19,7 @@ int main()
 
         printf("\n");
     }
-    for (int i = num; i >= 0; i--)
+    for (int i = num-1; i >= 0; i--)
     {
         for (int o = 1; o <= num - i; o++)
         {
