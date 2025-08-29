@@ -1,22 +1,19 @@
 {
-  "version": "2.0.0",
-  "tasks": [
+  "version": "0.2.0",
+  "configurations": [
     {
-      "label": "Build C Program",
-      "type": "shell",
-      "command": "gcc",
-      "args": [
-        "-g",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": ["$gcc"],
-      "detail": "Compile C program"
+      "name": "Run C Program (GCC)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "preLaunchTask": "build C program"
     }
   ]
 }
