@@ -14,7 +14,7 @@ int main()
     scanf("%d", &num2);
 
     printf("Enter operator: ");
-    scanf(" %c", &op);  // Notice space before %c
+    scanf(" %c", &op); // Notice space before %c
 
     printf("\nThinking...\n");
 
