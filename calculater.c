@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include<windows.h>
 int main()
 {
     char op;
@@ -17,7 +17,6 @@ int main()
     scanf(" %c", &op); // Notice space before %c
 
     printf("\nThinking...\n");
-
     switch (op)
     {
     case '-':
