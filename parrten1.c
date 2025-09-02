@@ -14,14 +14,13 @@ int main()
         }
         printf("\n");
     }
-    for (int y = num-1; y >0; y--)
+    for (int y = num - 1; y > 0; y--)
     {
-          for (int l = 0; l <y; l++)
-          {
-           printf(" *");
-          }
-          
+        for (int l = 0; l < y; l++)
+        {
+            printf(" *");
+        }
+
         printf("\n");
     }
-    
 }
