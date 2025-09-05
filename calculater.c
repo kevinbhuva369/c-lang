@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<windows.h>
+
 int main()
 {
     char op;
@@ -13,10 +13,11 @@ int main()
     printf("Enter number2: ");
     scanf("%d", &num2);
 
-    printf("Enter operator: ");
+    printf("Enter opretar: ");
     scanf(" %c", &op); // Notice space before %c
 
     printf("\nThinking...\n");
+
     switch (op)
     {
     case '-':
@@ -28,11 +29,17 @@ int main()
     case '*':
         printf("The value is: %d\n", num1 * num2);
         break;
+
     case '/':
-        if (num2 != 0)
-            printf("The value is: %d\n", num1 / num2);
-        else
+        if (num1 == 0 || num2 == 0)
+        {
             printf("Error: Division by zero is not allowed!\n");
+            break;
+        }
+        else
+        {
+            printf("The value is: %d\n", num1 / num2);
+        }
         break;
     default:
         printf("Invalid operator!\n");
